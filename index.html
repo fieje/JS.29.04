@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Management</title>
+    <script defer scr="D:\Visual studio code projects\курси\домашнє 29.04\app.js"> </script>
+</head>
+
+<body>
+    <h1>Station Management</h1>
+
+
+    <h2>Add Station</h2>
+    <input type="text" id="addressInput" placeholder="Enter station address">
+    <button onclick="addStation()">Add Station</button>
+
+
+    <h2>Stations</h2>
+    <ul id="stationsList"></ul>
+
+
+    <h2>Delete Station</h2>
+    <input type="text" id="deleteStationInput" placeholder="Enter station ID">
+    <button onclick="deleteStation(document.getElementById('deleteStationInput').value)">Delete Station</button>
+
+
+    <h2>Refresh Stations</h2>
+    <button onclick="loadStations()">Refresh Stations</button>
+
+</body>
+</html>
